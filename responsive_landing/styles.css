@@ -1,0 +1,99 @@
+/* Default styling */
+body {
+    background-color: lightblue;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+hr {
+    margin-top: 50px;
+}
+
+/* main styling */
+.adopt-box h3, .event-box h3{
+    text-align: center;
+}
+.adopt-box img {
+    float: left;
+    height: 200px;
+    width: 50%;
+    margin-right: 5px;
+    border-radius: 4px;
+}
+
+.adopt-box p,
+.event-box p {
+    line-height: 1.45rem;
+    font-size: 1.05rem;
+    padding: 0;
+    margin: 0;
+}
+
+.event-box img {
+    margin-left: 5px;
+    border-radius: 5px;
+}
+
+/* about styling */
+.about {
+    padding-bottom: 100px;
+}
+
+.about p {
+    font-weight: 500;
+}
+
+/* Media Query */
+/* On screens lessthan 960px width*/
+@media screen and (max-width: 960px) {
+
+    .adopt-box img {
+        float: none;
+        height: 200px;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .event-box img {
+        margin-left: 0;
+        margin-bottom: 5px;
+        border-radius: 5px;
+        height: 200px;
+    }
+
+    .adopt-box p,
+    .event-box p {
+        line-height: 1.45rem;
+        font-size: 1.05rem;
+        text-align: center;
+    }
+
+    .event-box1 {
+        flex-direction: column-reverse;
+    }
+    .event-box2 {
+        flex-direction: column-reverse;
+    }
+}
+
+/* flex styles */
+.flex {
+    display: flex;
+}
+
+/*--flex directions--*/
+.column {
+    flex-direction: column;
+}
+
+.column-reverse {
+    flex-direction: column-reverse;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
