@@ -1,6 +1,11 @@
+/* variable */
+:root {
+    --primary-color: #FEC89A;
+}
+
 /* Default styling */
 body {
-    background-color: lightblue;
+    background-color: var(--primary-color);
 }
 
 img {
@@ -11,9 +16,16 @@ img {
 
 hr {
     margin-top: 50px;
+    border: none;
+    background-color:  #FFD7BA;
+    height: 1px;
 }
 
 /* main styling */
+.adopt-box, .event-box {
+    box-shadow: 0 4px 4px 0 #FEB97D;
+    border-radius: 5px;
+}
 .adopt-box h3, .event-box h3{
     text-align: center;
 }
@@ -21,7 +33,7 @@ hr {
     float: left;
     height: 200px;
     width: 50%;
-    margin-right: 5px;
+    margin: 5px;
     border-radius: 4px;
 }
 
@@ -29,12 +41,12 @@ hr {
 .event-box p {
     line-height: 1.45rem;
     font-size: 1.05rem;
-    padding: 0;
+    padding: 5px;
     margin: 0;
 }
 
 .event-box img {
-    margin-left: 5px;
+    margin: 5px;
     border-radius: 5px;
 }
 
